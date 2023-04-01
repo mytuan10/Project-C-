@@ -1,10 +1,8 @@
 #include <stdio.h>
 
-int main(void)
+void Number(int n)
 {
     int sum = 0;
-    int n;
-    printf("Nhap n = "); scanf("%d",&n);
     while (n != 0)
     {
         if(n % 2  == 0)
@@ -16,6 +14,14 @@ int main(void)
 
     }
     printf("\nTong cac so chan la %d: ",sum);
+}
+
+int main(void)
+{
+    int sum = 0;
+    int n;
+    printf("Nhap n = "); scanf("%d",&n);
+    Number(n);
 
     return 0;
 }
